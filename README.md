@@ -14,7 +14,8 @@ Standard Workflow:-
 Clone the project using the following and get started. 
 
 ```
-git@github.com:Nikhil-Mudgal/RnM.git
+git clone https://github.com/Nikhil-Mudgal/RnM.git 
+
 ```
 
 ### Commiting Pradigm 
