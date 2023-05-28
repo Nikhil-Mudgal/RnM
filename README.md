@@ -31,8 +31,8 @@ If the request passes tests it gets pushed into the repo.
 
 ## Explanation of the Project
 
-To do:- Add proper ReadMe.md with the description of the project and flow diagrams. 
-To do:- Creation of unit test similarily done using python. 
+* To do:- Add proper ReadMe.md with the description of the project and flow diagrams. 
+* To do:- Creation of unit test similarily done using python. 
 
 ## Contributors 
 
