@@ -1,6 +1,6 @@
 import requests
-from weatherAPI.utils import *
-from weatherAPI.config import *
+from weatherCLI.utils import *
+from weatherCLI.config import *
 
 class getWeather:
     def __init__(self,cityName):
