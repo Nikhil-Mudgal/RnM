@@ -1,10 +1,11 @@
 import requests
-from utils import *
+from weatherAPI.utils import *
+from weatherAPI.config import *
 
 class getWeather:
     def __init__(self,cityName):
-        self.__BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-        self.__API_KEY = open('src/api_key','r').read()
+        self.__BASE_URL = BASE_URL
+        self.__API_KEY = API_KEY
         self.__CITY_NAME = cityName
         self.RESPONSE = {"ok"}
 
@@ -25,7 +26,3 @@ class getWeather:
             "sunSet" : getSunSet(response)
         }
         return self.RESPONSE
-
-response = getWeather("Paris").requiredData()
-
-print(response)
