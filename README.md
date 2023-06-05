@@ -10,11 +10,24 @@ To make it easy to get started, a list of recommended next steps.
 ### Setup
 
 Standard Workflow:-
-Clone the project using the following and get started.
+
+* Clone the project using the following and get started.
 
 ``` SHELL
 git clone https://github.com/Nikhil-Mudgal/RnM.git 
 
+```
+
+* Build the Package:-
+
+``` SHELL
+python setup.py sdist bdist_wheel
+```
+
+* Install the package:-
+
+``` SHELL
+pip install dist/weatherCLI-1.0.tar.gz
 ```
 
 ### Commiting Pradigm
