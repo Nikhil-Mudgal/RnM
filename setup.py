@@ -1,13 +1,13 @@
-from setuptools import setup, find_packagesa
+from setuptools import setup, find_packages
 
-with open('requiremnents.txt') as f:
-    required = f.read().splitlines()
+# with open("requirements.txt") as f:
+#     required = f.read().splitlines()
 
 setup(
-    name = "weatherCLI",
-    version = "1.0",
-    package_dir={'':'src'},
-    packages=find_packagesa(where='src'),
-    entry_points = {'console_scripts':['weatherCLI = weatherCLI.waetherCLI:main']},
-    install_requires = required
+    name="weatherCLI",
+    version="1.0",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    entry_points={"console_scripts": ["weatherCLI = weatherCLI.weatherCLI:main"]},
+    install_requires=["requests",'pytz'],
 )

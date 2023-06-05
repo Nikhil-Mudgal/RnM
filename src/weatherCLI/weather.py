@@ -2,8 +2,9 @@ import requests
 from weatherCLI.utils import *
 from weatherCLI.config import *
 
+
 class getWeather:
-    def __init__(self,cityName):
+    def __init__(self, cityName):
         self.__BASE_URL = BASE_URL
         self.__API_KEY = API_KEY
         self.__CITY_NAME = cityName
@@ -18,11 +19,11 @@ class getWeather:
     def requiredData(self):
         response = self.getResponse()
         self.RESPONSE = {
-            "currentTemp" : getCurrentTemperature(response),
-            "feelsLike" : getFeelsLike(response),
-            "windSpeed" : getWindSpeed(response),
-            "weatherDescription" : getWeatherDescription(response),
-            "sunRise" : getSunRise(response),
-            "sunSet" : getSunSet(response)
+            "currentTemp": getCurrentTemperature(response),
+            "feelsLike": getFeelsLike(response),
+            "windSpeed": getWindSpeed(response),
+            "weatherDescription": getWeatherDescription(response),
+            "sunRise": getSunRise(response),
+            "sunSet": getSunSet(response),
         }
         return self.RESPONSE
